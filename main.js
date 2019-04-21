@@ -74,8 +74,8 @@ const projects = [
         id:2,
         name: 'Quiz Time',
         description: 'With a fun and inviting design you can <span>create and take quizzes</span> I hope you’re up for the challenge.',
-        live: 'https://github.com/sam-g99/Time-Zones-Made-Simple',
-        src: 'https://github.com/sam-g99/Time-Zones-Made-Simple',
+        live: 'https://serene-sands-41595.herokuapp.com',
+        src: 'https://github.com/sam-g99/Quiz-Time',
         technologies: ['HTML/CSS/Javascript','Vue', 'Vue CLI', 'MongoDB', 'Express','Mongoose'],
         img: '/project-images/quiztime.gif'
     },
