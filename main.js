@@ -147,7 +147,11 @@ setTimeout(() => {document.getElementById('home').style.display = 'block'}, anim
 
 //DYNAMIC CENTER
 function centerAbsolute(){
-
+	    const greetingDiv = document.getElementById('greeting');
+    const width = greetingDiv.offsetWidth /2;
+    const height = greetingDiv.offsetHeight /2;
+    greetingDiv.style.marginLeft = `-${width}px`;
+    greetingDiv.style.marginTop = `-${height + 130}px`
 }
 window.onload = () =>{setTimeout(() => centerAbsolute(), animationEndTime); navBarAnimation()}
 window.onresize = () =>{centerAbsolute(); navBarAnimation()}
