@@ -94,7 +94,6 @@ body{
     overflow: auto;
 }
 .skills{
-    margin-top:100vh;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -268,6 +267,7 @@ img{
 .home{
     display: none;
     opacity: 0;
+    height:100%;
     animation: fadeIn .3s ease 0s 1 forwards;
 }
 .greeting{
