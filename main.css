@@ -88,8 +88,8 @@ body{
 }
 
 .section{
-    min-height: 100vh;
-    width:100vw;
+    min-height: 100%;
+    width:100%;
     background: #333333;
     overflow: auto;
 }
@@ -267,7 +267,6 @@ img{
 .home{
     display: none;
     opacity: 0;
-    height:100%;
     animation: fadeIn .3s ease 0s 1 forwards;
 }
 .greeting{
