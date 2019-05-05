@@ -215,15 +215,13 @@ img{
     font-weight: bold;
 }
 .input-email{
-    width:0px;
-    overflow: hidden;
-    height:0;
-    background: #333333;
-    border:none;
-    position: absolute;
-    bottom:0;
-    cursor: default;;
-    right:0;
+  color:#333333;
+  background: #333333;
+  border:none;
+  position: fixed;
+  bottom:-100px;
+  cursor: default;
+  right:0;
 }
 /*ANIMATIONS*/
 @keyframes codeload {
