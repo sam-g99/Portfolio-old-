@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#333333" />
+   
+
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Heebo|Raleway" rel="stylesheet">
@@ -15,41 +18,38 @@
     <title>Samuel Graham</title>
 </head>
 <body>    
+    <noscript>Hey, i see javascript is disabled, please enable it to experience my site as intended! Thanks :)</noscript>
     <div id="top"></div>
-    <nav id="hamburger">
-        <div class="hamburger-container" onclick="showNav()"  id="hamburgerContainer"> 
-            <div class="hamburger"></div>
-            <div class="hamburger"></div>
-            <div class="hamburger"></div>
+    <nav class="nav-bar" id="navBar">
+        <div class="hamburger" id="hamburger" onclick="hamburgerToggle()">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-        <p id="sectionName">Skills</p>
-        <div class="sections" id="navBar">
-            <ul>
-                <li onclick="autoScrollTo('top', 'mn')">Home</li>
-                <li id="section1" onclick="autoScrollTo('skillsSection', 'mn')">Skills</li>
-                <li id="section2" onclick="autoScrollTo('projectsSection', 'mn')">Projects</li>
-                <li id="section3" onclick="autoScrollTo('contactSection', 'mn')">Contact</li>
-            </ul>
-        </div>
+        <h2 id="sectionDisplay">Skills</h2>
+        <ul>
+            <li id="section0" onclick="autoScrollTo('top', 'hn')">Home</li>
+            <li id="section1" onclick="autoScrollTo('skillsSection', 'hn')">Skills</li>
+            <li id="section2" onclick="autoScrollTo('projectsSection', 'hn')">Projects</li>
+            <li id="section3" onclick="autoScrollTo('contactSection', 'hn')">Contact</li>
+        </ul>
+        <div class="scroll-status"><div class="status-circle" id="circle" style="transform: translateX(0px)"></div></div>
     </nav>
+
     <div class="computer-screen" id="computerScreen">
-        <div class="home" id="home">
+        <section class="home" id="home">
             <div class="greeting" id="greeting">
                 <p>Hey my name is Samuel Graham.</p>
                 <p>I’m a <span class="red">Front-end Web Developer.</span></p>
                 <p>In <span class="blue">New York City</span></p>
             </div>
-            <div class=" greeting short-vers">
-                <p class='red'>Front End <br>Web Developer.</p>
-                <p class='blue'>New York City</p>
-            </div>
             <div class="nav-button-container">
                 <div class="btn" id="skills" onclick="autoScrollTo('skillsSection', 'hn')">Skills</div>
                 <div class="btn" id="projects" onclick="autoScrollTo('projectsSection', 'hn')">Projects</div>
-                <div class="btn" id="contact" onclick="autoScrollTo('contactSection', 'hn')">Contact</div>
+                <div class="btn contact" id="contact" onclick="autoScrollTo('contactSection', 'hn')">Contact</div>
             </div>
-        </div>
-            <div class="section skills" id="skillsSection">
+        </section>
+            <section class="section skills" id="skillsSection">
                 <div class="skill-container">
                     <div class="skill-section front-end">
                         <h2>Front-end</h2>
@@ -57,14 +57,14 @@
                     </div>
                     <div class="skill-section backend">
                         <h2>Backend</h2>
-                        <p>NodeJS, MongoDB, Express, Mongoose</p>
+                        <p>PHP, NodeJS, MongoDB, Express, Mongoose</p>
                     </div>
                     <div class='info'>
                         My usual stack, always looking forward to learn more. Including backend technologies.
                     </div>
                 </div>
-            </div>
-            <div class="section projects" id="projectsSection">
+            </section>
+            <section class="section projects" id="projectsSection">
                     <div class="projects-container" id="projectsContainer">
                 
                 <div class="column" id="projectsColumn">
@@ -72,26 +72,23 @@
                     </div>
                 </div>
 
-            </div>
-            <div class="section contact" id="contactSection">
+            </section>
+            <section class="section contact" id="contactSection">
                 <div class="contact-info">
                     <h2>Want to get in touch?</h2>
                     <p>Email me at</p>
                     <textarea id="emailInput" class="input-email">samuel.graham099dev@gmail.com</textarea>
                     <p class="email">samuel.graham099dev@gmail.com</p>
                     <div class='btn copy-btn' id="copyButton" onclick="copyEmail()">Copy Email</div>
-                    <p>Thanks for viewing my portolio!</p>
+                    <p>Thank you for viewing my portolio!</p>
+                </div>
+            </section>
+            <div class="back-to-top" id="arrow" onclick="autoScrollTo('top', 'hn')">
+                <div class="up-arrow">
+                    <div></div>
+                    <div></div>
                 </div>
             </div>
-        <div class="scrollington" id="scrollington">
-            <div class="eye" id="eye">
-                <div class="pupil" id="pupil"></div>
-            </div>
-            <div class="mouth"></div>
-        </div>
-       <!----<div class="code-container" id="codeContainer">
-            Code line generated with javascript
-        </div>-->
     </div>
     <script src="main.js"></script>
 </body>
