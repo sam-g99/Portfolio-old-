@@ -127,6 +127,8 @@ section,
 .hamburger {
   cursor: pointer;
   display: none;
+  float:right;
+  margin-bottom: 8px;
 }
 .hamburger div {
   width: 40px;
@@ -194,7 +196,7 @@ section,
 nav h2 {
   position: absolute;
   top: 19.5px;
-  left: 70px;
+  left: 15px;
   font-size: 1.7em;
   font-family: "Rubik";
   font-weight: 500;
@@ -214,8 +216,8 @@ nav h2 {
   }
   .nav-bar li {
     display: block;
-    float: left;
     clear: left;
+    text-align: center;
   }
   #sectionDisplay {
     user-select: none;
