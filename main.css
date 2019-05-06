@@ -218,6 +218,7 @@ nav h2 {
     display: block;
     clear: left;
     text-align: center;
+    margin:0;
   }
   #sectionDisplay {
     user-select: none;
