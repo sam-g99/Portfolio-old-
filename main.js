@@ -110,12 +110,12 @@ const projects = [
   },
   {
     id: 3,
-    name: "Calorie Calculator",
-    description: `Tells you how many calories you’d burn doing walking, running and jumping jacks. Even comes with with a <span>routine generator</span>.`,
-    live: "https://vigorous-archimedes-8dbac2.netlify.com/",
-    src: "https://github.com/sam-g99/Calorie-Burn-Calculator",
-    technologies: ["HTML/CSS/Javascript", "HTML", "CSS", "Javascript"],
-    img: "/project-images/calculator.PNG"
+    name: "Movie API",
+    description: `Connecting to The Movie Database api and displaying data with react.`,
+    live: "https://elegant-hoover-031eef.netlify.com/",
+    src: "https://github.com/sam-g99/Movie-API",
+    technologies: ["HTML/CSS/Javascript", "React","API"],
+    img: "/project-images/movies.PNG"
   },
   {
     id: 4,
